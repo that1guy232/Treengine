@@ -1,4 +1,4 @@
-from ECS.Entity import Entity
+from Trengine.ECS.Entity import Entity
 
 # define the base system
 class System:
@@ -19,3 +19,6 @@ class System:
             else:
                 self.entities.append(entity)
                 return True
+            
+    def update(self, dt):
+        pass
