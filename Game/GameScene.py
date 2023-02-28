@@ -1,14 +1,20 @@
 import pygame
 
+from Trengine.SM.StateMachine import StateMachine
+
 
 class GameScene:
     def __init__(self, game, name) -> None:
         self.game = game
         self.name = name
         self.clear_color = (0, 0, 0)
-        self.UIWidgets = []
 
+        self.UIWidgets = []
         self.renderables = []
+
+        self.available_states = []
+
+        self.state_machine = StateMachine()
 
         pass
 
