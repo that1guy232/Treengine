@@ -1,4 +1,3 @@
-from pyautogui import PRIMARY
 import pygame
 
 

@@ -1,4 +1,3 @@
-from matplotlib import widgets
 import pygame
 
 # ineratable class
