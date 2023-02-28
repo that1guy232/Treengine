@@ -1,6 +1,4 @@
 import pygame
-
-
 from Trengine.GameRenderer.Camera import Camera
 from Trengine.GameRenderer.Renderer import Renderer
 
