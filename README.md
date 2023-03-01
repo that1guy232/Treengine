@@ -26,6 +26,8 @@ Treengine is a Python-based game engine designed for 2D game development on the 
     pip install pygame-ce
     clone the repository (For now)
 
+## Getting started
+    Refer to Getting Started Guide
 
 ## Contributing
     Contributions are welcome! To contribute, please follow these guidelines:
