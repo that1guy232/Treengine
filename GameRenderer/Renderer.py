@@ -1,5 +1,5 @@
 import pygame
-from Trengine.GameRenderer.Renderable import Renderable
+from Treengine.GameRenderer.Renderable import Renderable
 
 
 class Renderer:

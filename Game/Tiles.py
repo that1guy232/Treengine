@@ -1,4 +1,4 @@
-from Trengine.Game.Spritesheet import SpriteSheet
+from Treengine.Game.Spritesheet import SpriteSheet
 
 
 class TileMap:
