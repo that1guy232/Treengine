@@ -1,13 +1,13 @@
-from Trengine.ECS.System import System
+from Treengine.ECS.System import System
 
-from Trengine.ECS.common.components.SpriteComponent import SpriteComponent
-from Trengine.ECS.common.components.PositionComponent import PositionComponent
+from Treengine.ECS.common.components.SpriteComponent import SpriteComponent
+from Treengine.ECS.common.components.PositionComponent import PositionComponent
 
-from Trengine.ECS.Entity import Entity
+from Treengine.ECS.Entity import Entity
 
-from Trengine.Game.GameScene import GameScene
+from Treengine.Game.GameScene import GameScene
 
-from Trengine.GameRenderer.Renderable import Texture
+from Treengine.GameRenderer.Renderable import Texture
 
 import pygame
 

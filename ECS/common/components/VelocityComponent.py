@@ -1,4 +1,4 @@
-from Trengine.ECS.Component import Component
+from Treengine.ECS.Component import Component
 
 
 class VelocityComponent(Component):

@@ -1,6 +1,6 @@
-from Trengine.ECS.Component import Component
-from Trengine.ECS.System import System
-from Trengine.ECS.Entity import Entity
+from Treengine.ECS.Component import Component
+from Treengine.ECS.System import System
+from Treengine.ECS.Entity import Entity
 
 # define the world
 

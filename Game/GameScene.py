@@ -1,6 +1,6 @@
 import pygame
 
-from Trengine.SM.StateMachine import StateMachine
+from Treengine.SM.StateMachine import StateMachine
 
 
 class GameScene:
@@ -28,7 +28,7 @@ class GameScene:
     def on_exit(self):
         pass
 
-    def update(self):
+    def update(self, dt):
         pass
 
     def draw(self):

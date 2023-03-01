@@ -1,4 +1,4 @@
-from Trengine.ECS.Entity import Entity
+from Treengine.ECS.Entity import Entity
 
 # define the base system
 
