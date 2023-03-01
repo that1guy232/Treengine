@@ -1,6 +1,7 @@
 import pygame
-from Trengine.GameRenderer.Camera import Camera
-from Trengine.GameRenderer.Renderer import Renderer
+from Treengine.GameRenderer.Camera import Camera
+
+from Treengine.Game.GameScene import GameScene
 
 
 class TreeGame:
@@ -17,6 +18,9 @@ class TreeGame:
         self.running = True
 
         self.current_scene = None
+
+        # if we do not have a scene we will use a empty scene
+        self.current_scene = GameScene(self, "empty_scene")
 
         self.scenes = []
 
