@@ -54,4 +54,8 @@ class GameScene:
 
         pass
 
+    def add_renderable(self, renderable):
+        self.renderables.append(renderable)
+        pass
+
     pass
