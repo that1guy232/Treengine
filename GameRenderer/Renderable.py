@@ -104,7 +104,18 @@ class Polygon(Renderable):
 
 
 class Texture(Box):
+    
     def __init__(self, x, y, width, height, texture, visible=True):
+        """_summary_
+
+        Args:
+            x (_type_): _description_
+            y (_type_): _description_
+            width (_type_): _description_
+            height (_type_): _description_
+            texture (_type_): _description_
+            visible (bool, optional): _description_. Defaults to True.
+        """        
         super().__init__(x, y, width, height, visible=visible)
         self.texture = texture
         self.scaled_texture = texture
