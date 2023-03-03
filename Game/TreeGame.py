@@ -69,7 +69,7 @@ class TreeGame:
 
             # handle the exit event
             self.events = pygame.event.get()
-            
+
             for event in self.events:
                 if event.type == pygame.QUIT:
                     self.running = False
