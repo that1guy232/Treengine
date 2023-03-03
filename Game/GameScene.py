@@ -22,13 +22,14 @@ class GameScene:
         # reset the camera
         self.game.camera.posistion = pygame.Vector2(0, 0)
         self.game.camera.zoom = 1
-
         pass
 
     def on_exit(self):
         pass
 
     def update(self, dt):
+        # update the state machine
+        self.state_machine.update(dt)
         pass
 
     def draw(self):
