@@ -85,4 +85,9 @@ class TreeGame:
             pygame.display.flip()
         pass
 
+    def quit(self):
+        pygame.quit()
+        self.running = False
+        pass
+
     pass
