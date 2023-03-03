@@ -5,6 +5,15 @@ import pygame
 
 class Renderable:
     def __init__(self, x, y, width, height, visible=True):
+        """_summary_
+
+        Args:
+            x (_type_): _description_
+            y (_type_): _description_
+            width (_type_): _description_
+            height (_type_): _description_
+            visible (bool, optional): _description_. Defaults to True.
+        """
         self.posistion = pygame.Vector2(x, y)
         self.rect = pygame.Rect(x, y, width, height)
         self.ignore_camera = False
@@ -62,6 +71,15 @@ class Box(Renderable):
 
 class Circle(Renderable):
     def __init__(self, x, y, radius, color=(255, 255, 255), line_width=0):
+        """_summary_
+
+        Args:
+            x (_type_): _description_
+            y (_type_): _description_
+            radius (_type_): _description_
+            color (tuple, optional): _description_. Defaults to (255, 255, 255).
+            line_width (int, optional): _description_. Defaults to 0.
+        """
         super().__init__(x, y, radius, radius)
         self.radius = radius
         self.color = color
@@ -83,6 +101,13 @@ class Circle(Renderable):
 
 class Polygon(Renderable):
     def __init__(self, x, y, points):
+        """_summary_
+
+        Args:
+            x (_type_): _description_
+            y (_type_): _description_
+            points (_type_): _description_
+        """
         super().__init__(x, y, 0, 0)
         self.points = points
 
@@ -104,7 +129,6 @@ class Polygon(Renderable):
 
 
 class Texture(Box):
-    
     def __init__(self, x, y, width, height, texture, visible=True):
         """_summary_
 
@@ -115,7 +139,7 @@ class Texture(Box):
             height (_type_): _description_
             texture (_type_): _description_
             visible (bool, optional): _description_. Defaults to True.
-        """        
+        """
         super().__init__(x, y, width, height, visible=visible)
         self.texture = texture
         self.scaled_texture = texture
@@ -157,6 +181,15 @@ class Text(Renderable):
     """ """
 
     def __init__(self, x, y, text, font, color=(255, 255, 255)):
+        """_summary_
+
+        Args:
+            x (_type_): _description_
+            y (_type_): _description_
+            text (_type_): _description_
+            font (_type_): _description_
+            color (tuple, optional): _description_. Defaults to (255, 255, 255).
+        """
         super().__init__(x, y, 0, 0)
         self.text = text
         self.font = font
