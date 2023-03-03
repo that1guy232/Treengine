@@ -58,4 +58,8 @@ class GameScene:
         self.renderables.append(renderable)
         pass
 
+    def add_UIWidget(self, widget):
+        self.UIWidgets.append(widget)
+        pass
+
     pass
