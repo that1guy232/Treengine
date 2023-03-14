@@ -22,7 +22,20 @@ class Button:
         self.color = color
         self.text = text
         self.callback = callback
+
+        ########################
+
+        """TODO: We should not be creating a new font every time we create a button
+        Solution: UI Manager?
+        Does each scene have its own UI manager?
+        How does the UI mananger know what UI elements to handle?
+        Does the UI Manager create the UI elements?        
+        
+        """
         self.font = pygame.font.SysFont("comicsans", 20)
+
+        ########################
+
         self.hidden = False
 
     def draw(self, surface):
