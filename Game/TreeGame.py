@@ -5,12 +5,17 @@ from Treengine.Game.GameScene import GameScene
 
 
 class TreeGame:
-    def __init__(self) -> None:
+
+    def __init__(self, height = 800, width = 600) -> None:
         # Initialize pygame
         pygame.init()
         pygame.font.init()
+    
         # display
-        pygame.display.set_mode((800, 600))
+        pygame.display.set_mode((height, width))
+
+        self.width = width
+        self.height = height
 
         self.screen = pygame.display.get_surface()
 
@@ -27,8 +32,7 @@ class TreeGame:
         self.events = []
 
         # default camera & renderer
-        #    def __init__(self, width, height, camera_min_x, camera_min_y, camera_max_x=10000000, camera_max_y=10000000):
-        self.camera = Camera(800, 600, 0, 0)
+        self.camera = Camera(self.width, self.height, 0, 0)
 
         pass
 
@@ -62,11 +66,14 @@ class TreeGame:
 
     def run(self):
         while self.running:
+          
             dt = self.game_clock.get_time()
+
+
+        
             self.current_scene.update(dt)
             self.current_scene.draw()
             self.game_clock.tick(60)
-
             # handle the exit event
             self.events = pygame.event.get()
 
