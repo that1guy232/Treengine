@@ -2,6 +2,7 @@ import pygame
 
 from Treengine.SM.StateMachine import StateMachine
 
+from Treengine.UI import UIManager
 
 class GameScene:
     def __init__(self, game, name) -> None:
@@ -11,7 +12,7 @@ class GameScene:
 
         self.UIWidgets = []
 
-        self.UIManager = None
+        self.UIManager = UIManager()
 
         self.renderables = []
 
@@ -47,11 +48,10 @@ class GameScene:
             )
             pass
 
-        # draw all the UI widgets
-        for widget in self.UIWidgets:
-            widget.draw(self.game.screen)
+        # draw call Draw on the UI Manager
+        self.UIManager.draw(self.game.screen)
 
-        pass
+
 
     def handle_event(self, event):
 
