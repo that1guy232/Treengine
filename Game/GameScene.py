@@ -10,6 +10,9 @@ class GameScene:
         self.clear_color = (0, 0, 0)
 
         self.UIWidgets = []
+
+        self.UIManager = None
+
         self.renderables = []
 
         self.available_states = []
@@ -22,6 +25,7 @@ class GameScene:
         # reset the camera
         self.game.camera.posistion = pygame.Vector2(0, 0)
         self.game.camera.zoom = 1
+
         pass
 
     def on_exit(self):
@@ -46,9 +50,11 @@ class GameScene:
         # draw all the UI widgets
         for widget in self.UIWidgets:
             widget.draw(self.game.screen)
+
         pass
 
     def handle_event(self, event):
+
         for widget in self.UIWidgets:
             widget.handle_event(event)
             pass
