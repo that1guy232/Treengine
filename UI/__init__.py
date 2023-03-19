@@ -1,7 +1,8 @@
 # UI/__init__.py
 
-from . import Button
-from . import TextButton
-from . import TextLabel
-from . import UIManager
-from . import UIWidget
+
+from .Button import Button
+from .TextButton import TextButton
+from .TextLabel import TextLabel
+from .UIManager import UIManager
+from .UIWidget import UIWidget
