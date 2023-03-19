@@ -4,6 +4,7 @@ from Treengine.SM.StateMachine import StateMachine
 
 from Treengine.UI import UIManager
 
+
 class GameScene:
     def __init__(self, game, name) -> None:
         self.game = game
@@ -37,7 +38,6 @@ class GameScene:
         self.state_machine.update(dt)
         self.UIManager.update()
 
-
         pass
 
     def draw(self):
@@ -54,10 +54,8 @@ class GameScene:
         # draw call Draw on the UI Manager
         self.UIManager.draw(self.game.screen)
 
-
-
     def handle_event(self, event):
-        self.UIManager.handle_event(event)       
+        self.UIManager.handle_event(event)
         pass
 
     def add_renderable(self, renderable):
@@ -65,7 +63,7 @@ class GameScene:
         pass
 
     def add_UIWidget(self, widget):
-        self.UIWidgets.append(widget)
+        self.UIManager.add_widget(widget)
         pass
 
     pass
