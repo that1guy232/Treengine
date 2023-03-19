@@ -1,5 +1,5 @@
 from .GameScene import GameScene
 from .SceneState import SceneState
-from .Spritesheet import Spritesheet
-from .Tiles import Tiles
+from .SpriteSheet import Spritesheet
+from .Tiles import Tile
 from .TreeGame import TreeGame
