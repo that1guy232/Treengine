@@ -35,6 +35,9 @@ class GameScene:
     def update(self, dt):
         # update the state machine
         self.state_machine.update(dt)
+        self.UIManager.update()
+
+
         pass
 
     def draw(self):
@@ -54,11 +57,7 @@ class GameScene:
 
 
     def handle_event(self, event):
-
-        for widget in self.UIWidgets:
-            widget.handle_event(event)
-            pass
-
+        self.UIManager.handle_event(event)       
         pass
 
     def add_renderable(self, renderable):
