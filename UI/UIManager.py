@@ -5,7 +5,7 @@ import pygame
 
 class UIManager:
     def __init__(self) -> None:
-        self.UIWidget = []
+        self.UIWidgets = []
 
     # Add widget and enforce UIWidget type
     def add_widget(self, widget: UIWidget) -> None:
