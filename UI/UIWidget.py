@@ -8,8 +8,14 @@ class UIWidget:
     - enabled
     - is_hovered
     """
-
+    
     def __init__(self, position: Tuple[int, int], enabled: bool = True) -> None:
+        """_summary_
+
+        Args:
+            position (Tuple[int, int]): _description_
+            enabled (bool, optional): _description_. Defaults to True.
+        """        
         self.position = position
         self.enabled = enabled
         self.is_hovered = False
